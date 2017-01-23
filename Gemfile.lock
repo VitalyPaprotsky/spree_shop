@@ -1,3 +1,21 @@
+GIT
+  remote: https://github.com/spree-contrib/spree_i18n.git
+  revision: 2526de34f9001a4db4bac2109b59386a65a14b2c
+  branch: master
+  specs:
+    spree_i18n (3.2.0.alpha)
+      i18n_data
+      kaminari-i18n
+      rails-i18n
+      routing-filter
+      spree_core (>= 3.1.0, < 4.0)
+
+PATH
+  remote: ../spree_simple_sales
+  specs:
+    spree_simple_sales (0.0.1.alpha)
+      spree_core (>= 3.1.0, < 4.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -110,6 +128,7 @@ GEM
     highline (1.6.21)
     htmlentities (4.3.4)
     i18n (0.7.0)
+    i18n_data (0.7.0)
     jbuilder (2.6.1)
       activesupport (>= 3.0.0, < 5.1)
       multi_json (~> 1.2)
@@ -122,6 +141,9 @@ GEM
     kaminari (0.17.0)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
+    kaminari-i18n (0.4.0)
+      kaminari
+      rails
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -188,6 +210,9 @@ GEM
       nokogiri (~> 1.6)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
+    rails-i18n (5.0.2)
+      i18n (~> 0.7)
+      railties (~> 5.0)
     railties (5.0.1)
       actionpack (= 5.0.1)
       activesupport (= 5.0.1)
@@ -206,6 +231,9 @@ GEM
       ffi (>= 0.5.0)
     responders (2.3.0)
       railties (>= 4.2.0, < 5.1)
+    routing-filter (0.6.0)
+      actionpack (>= 4.2, < 5.1)
+      activesupport (>= 4.2, < 5.1)
     sass (3.4.23)
     sass-rails (5.0.6)
       railties (>= 4.0.0, < 6)
@@ -341,6 +369,8 @@ DEPENDENCIES
   spree (~> 3.2.0.rc1)
   spree_auth_devise (~> 3.2.0.beta)
   spree_gateway (~> 3.2.0.beta)
+  spree_i18n!
+  spree_simple_sales!
   spring
   spring-watcher-listen (~> 2.0.0)
   turbolinks (~> 5)
