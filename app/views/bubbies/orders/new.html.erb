@@ -1,1 +1,7 @@
-<h1>Hello!</h1>
+<p>Total: <%= "#{order.item_total.to_f} #{order.currency}" %></p>
+
+<ul>
+  <% order.line_items.each do |i| %>
+    <li><%= "#{i.product.name} - #{i.price.to_f} X #{i.quantity}" %></li>
+  <% end %>
+</ul>
