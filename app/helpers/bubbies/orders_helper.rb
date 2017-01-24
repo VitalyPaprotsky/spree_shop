@@ -1,0 +1,2 @@
+module Bubbies::OrdersHelper
+end
